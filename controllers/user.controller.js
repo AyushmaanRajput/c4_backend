@@ -29,7 +29,7 @@ exports.addUser = async (req, res, next) => {
       }
     });
   } catch (e) {
-    return res.state(400).json({ msg: "Something went wrong " });
+    return res.status(400).json({ msg: "Something went wrong " });
   }
 };
 
